@@ -6,7 +6,6 @@ public class CircularDoublyLinkedListImpl<T> {
     public void addNode(T value) {
         Node<T> newNode = new Node<>(value);
         if (head == null) {
-            newNode.value = value;
             newNode.next = newNode.previous = newNode;
             head = newNode;
             return;
