@@ -1,4 +1,4 @@
-package dataStructures.DFS.adjacecyMatrix;
+package dataStructures.DFS.adjacencyMatrix;
 
 class GFG {
     // adjacency matrix
@@ -53,5 +53,6 @@ class GFG {
 
         // Perform DFS
         dfs(0, visited);
+        //01234
     }
 }

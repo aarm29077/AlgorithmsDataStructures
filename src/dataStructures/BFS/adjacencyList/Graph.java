@@ -28,14 +28,13 @@ class Graph {
         boolean visited[] = new boolean[V];
 
         // Create a queue for BFS
-        LinkedList<Integer> queue = new LinkedList<Integer>();
+        LinkedList<Integer> queue = new LinkedList<>();
 
         // Mark the current node as visited and enqueue it
         visited[s]=true;
         queue.add(s);
 
-        while (queue.size() != 0)
-        {
+        while (queue.size() != 0) {
             // Dequeue a vertex from queue and print it
             s = queue.poll();
             System.out.print(s+" ");
@@ -44,8 +43,7 @@ class Graph {
             // If a adjacent has not been visited, then mark it
             // visited and enqueue it
             Iterator<Integer> i = adj[s].listIterator();
-            while (i.hasNext())
-            {
+            while (i.hasNext()) {
                 int n = i.next();
                 if (!visited[n])
                 {
@@ -71,5 +69,6 @@ class Graph {
                 "(starting from vertex 2)");
 
         g.BFS(2);
+        //2031
     }
 }
